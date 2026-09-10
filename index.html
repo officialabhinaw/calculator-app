@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body {
+            background-color: whitesmoke;
+        }
+
+        .container {
+            display: flex;
+            border-radius: 12px;
+            border-color: solid red;
+            flex-direction: column;
+            gap: 15px;
+            overflow: hidden;
+            padding: 15px 15px 0px 15px;
+        }
+
+        .up {
+            border-radius: 5px;
+            border-radius: solid red;
+            width: 100%;
+            height: 200px;
+            box-sizing: border-box;
+            padding: 0px 15px;
+            
+        }
+
+        #display {
+             width: 100%;
+            border: none;
+            outline: none;
+            background: transparent;
+            font-size: 40px;
+            text-align: right;
+            box-shadow: none;
+             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        .down {
+
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        .box {
+            grid-row-start: auto;
+            flex: 1;
+            aspect-ratio: 1/1;
+            max-width: 70px;
+            border: 5px;
+            border-radius: 120px;
+            background-color: rgb(223, 218, 218);
+            font-size: 20px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="up">
+            <input type="text" id="display" readonly>
+        </div>
+        <div class="down">
+            <div class="box">AC</div>
+            <div class="box">%</div>
+            <div class="box">back</div>
+            <div class="box">/</div>
+        </div>
+        <div class="down">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">*</div>
+        </div>
+        <div class="down">
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
+            <div class="box">-</div>
+        </div>
+        <div class="down">
+            <div class="box">7</div>
+            <div class="box">8</div>
+            <div class="box">9</div>
+            <div class="box">+</div>
+        </div>
+        <div class="down">
+            <div class="box">00</div>
+            <div class="box">0</div>
+            <div class="box">.</div>
+            <div class="box" style="background-color: rgb(228, 149, 0);">=</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

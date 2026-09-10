@@ -1,0 +1,22 @@
+# Calculator
+
+Ek simple web-based calculator, HTML/CSS/JS se bana hua.
+
+## Live Demo
+Deploy karne ke baad yahan link daalo:
+`https://officialabhinaw.github.io/calculator`
+
+## Features
+- Basic operations: `+`, `-`, `*`, `/`
+- `AC` — sab clear
+- `back` — last character delete
+- `%` — percentage
+- Circular button design, mobile-responsive
+
+## Tech
+- HTML
+- CSS (Flexbox)
+- Vanilla JavaScript
+
+## Run Locally
+Bas `index.html` ko browser me kholo, ya VS Code Live Server use karo.
