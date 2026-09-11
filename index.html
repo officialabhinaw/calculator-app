@@ -27,6 +27,7 @@
             height: 200px;
             box-sizing: border-box;
             padding: 0px 15px;
+            cursor: pointer;
             
         }
 
@@ -39,6 +40,7 @@
             text-align: right;
             box-shadow: none;
              font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+             cursor: pointer !important;
         }
 
         .down {
@@ -63,12 +65,23 @@
             align-items: center;
             cursor: pointer;
         }
+        #output
+        {
+            padding: 10px;
+            min-height: 100px;
+            outline: none;
+            cursor: text;
+        }
+        #output:focus
+        {
+            border-color: #4a90e2;;
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div class="up">
+        <div class="up" id="output" contenteditable="true">
             <input type="text" id="display" readonly>
         </div>
         <div class="down">
