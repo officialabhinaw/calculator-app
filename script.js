@@ -18,7 +18,7 @@ boxes.forEach(box => {
             display.value = display.value.slice(0, -1);
         }
         else if (value === "%") {
-            display.value = display.value.slice(1 / 100);
+            display.value = parseFloat(display.value)/100;
         }
         else {
             display.value += value;
